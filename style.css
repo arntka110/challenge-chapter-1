@@ -9,21 +9,67 @@
     font-weight: 550;
 }
 
-.btn-primary {
-    display: flex;
-    padding: 8px 12px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 2px;
-    background: #5CB85F;
-    color: #FFFF;
-    font-size: 14px;
-    font-weight: 700;
-}
-
 /* End Navbar */
 
+/* Why Us Section */
+.card {
+    border-radius: 4px;
+    background: #fff;
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05); */
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* End Why Us Section */
+
+/* Owl Carousel Section */
+.carousel-section {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.carousel-section .owl-carousel .owl-stage {
+    padding-left: 0 !important;
+    transform: translate3d(-1121px, 0px, 0px);
+    transition: all 0s ease 0s;
+}
+
+.carousel-section .owl-carousel .owl-stage-outer {
+    overflow: unset;
+}
+
+.carousel-section .owl-carousel .owl-nav .owl-next {
+    width: 50px;
+    background-color: #5CB85F;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 30px;
+    color: #FFFF;
+}
+
+.carousel-section .owl-carousel .owl-nav .owl-prev {
+    width: 50px;
+    border: 1px solid #c3c3c3;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 30px;
+    color: #000;
+}
+
+.carousel-section .owl-carousel .owl-nav .owl-next:focus,
+.carousel-section .owl-carousel .owl-nav .owl-prev:focus {
+    outline: 0;
+}
+
+/* End Owl Carousel Section */
+
+/* Custom Font */
 h1 {
     font-size: 36px;
     font-weight: 700;
@@ -46,4 +92,23 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
+}
+
+/* Button */
+.btn-primary {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background: #5CB85F;
+    color: #FFFF;
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: #3D7B3F;
 }
